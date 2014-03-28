@@ -1,0 +1,23 @@
+{
+    "name": "raypower/upyun",
+    "description": "UpYun api component for laravel 4",
+    "authors": [
+        {
+            "name": "Ray Kwok",
+            "email": "ruizkor@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "illuminate/support": "4.1.*"
+    },
+    "autoload": {
+        "classmap": [
+            "src/libs"
+        ],
+        "psr-0": {
+            "Raypower\\Upyun\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
