@@ -33,10 +33,10 @@ class UpyunServiceProvider extends ServiceProvider
         $this->app['upyun'] = $this->app->share(function ($app) {
 
             return new UpYun(
-                $app['config']['raypower/upyun::bucketname'],
+                $app['config']['raypower/upyun::bucket_name'],
                 $app['config']['raypower/upyun::username'],
                 $app['config']['raypower/upyun::password'],
-                $app['config']['raypower/upyun::endpoint'],
+                $app['config']['raypower/upyun::end_point'],
                 $app['config']['raypower/upyun::timeout']
             );
         });
